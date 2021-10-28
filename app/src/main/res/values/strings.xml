@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Chat App Project</string>
+    <string name="app_details" tools:ignore="StringEscaping">Hey There! I am using this ChatApp built by Gideon.</string>
+</resources>

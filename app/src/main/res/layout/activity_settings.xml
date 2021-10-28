@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="start"
+    android:orientation="vertical"
+    tools:context=".Activity.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/purple_500"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:fontFamily="@font/spartan_bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"/>
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_check_circle_24"/>
+
+
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settingImage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile_image"
+        app:civ_border_color="@color/purple_500"
+        app:civ_border_width="@dimen/_2sdp"/>
+
+    <EditText
+        android:id="@+id/settingName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="start"
+        android:text="@string/app_name"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:fontFamily="@font/spartan_regular"
+        android:background="@drawable/edit_text_shape"
+        android:padding="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+    <EditText
+        android:id="@+id/settingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="start"
+        android:text="@string/app_details"
+        android:textStyle="normal"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/spartan_thin"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_shape"
+        android:padding="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/saveAlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/purple_500"
+        android:fontFamily="@font/spartan_bold"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Save Changes"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"/>
+
+</LinearLayout>
