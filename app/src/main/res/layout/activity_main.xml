@@ -15,9 +15,19 @@
         android:gravity="center">
 
         <ImageView
-            android:layout_width="@dimen/_300sdp"
-            android:layout_height="@dimen/_300sdp"
-            android:background="@drawable/chat_app_custom_logo"/>
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:background="@drawable/chat"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat App"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_24sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:textColor="@color/white"
+            android:gravity="center"/>
 
 
         <!--<TextView
